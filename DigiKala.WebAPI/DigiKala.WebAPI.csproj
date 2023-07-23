@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Hangfire.Core" Version="1.8.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="7.0.7" />
+    <PackageReference Include="Serilog" Version="2.12.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="01.Core\ApplicationServices\Comman\Exceptions\" />
+    <Folder Include="01.Core\ApplicationServices\Comman\HelperClass%28standardoputput%29\" />
+    <Folder Include="01.Core\ApplicationServices\Entity1\Dtos\" />
+    <Folder Include="01.Core\Domains\Entity1\Events\" />
+    <Folder Include="01.Core\Domains\Entity1\Commands\" />
+    <Folder Include="01.Core\Domains\Entity1\Enums\" />
+    <Folder Include="01.Core\Domains\Entity1\Queries\" />
+    <Folder Include="01.Core\ApplicationServices\Entity1\Validators\" />
+    <Folder Include="01.Core\Domains\Entity2\" />
+    <Folder Include="02.Infrastructures\ExternalServices\KavehNegar\" />
+    <Folder Include="02.Infrastructures\UnitOfWorks\" />
+    <Folder Include="02.Infrastructures\Persistence\DBContext\" />
+    <Folder Include="Filters\" />
+    <Folder Include="01.Core\ApplicationServices\Comman\Mappings\Profiles\" />
+    <Folder Include="02.Infrastructures\Persistence\Configuration\" />
+    <Folder Include="Middleware\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
+</Project>
